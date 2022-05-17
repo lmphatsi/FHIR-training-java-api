@@ -28,6 +28,8 @@ public class Example01_CreateAPatient {
 		pat.addIdentifier().setSystem("http://identity_system_2").setValue("SYS2_00001");
 		pat.addName().setFamily("Thakalekoala").addGiven("Thabo").addGiven("Anthony");
 
+		// pat.addExtension().setUrl("http://politicalParty").setValue("Sefofane");
+
 		/*
 		 * // Alternative
 		 * List<Identifier> ids = new ArrayList<>();
