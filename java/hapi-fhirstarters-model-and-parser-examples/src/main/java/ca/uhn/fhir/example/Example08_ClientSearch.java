@@ -9,7 +9,7 @@ import ca.uhn.fhir.context.FhirContext;
 public class Example08_ClientSearch {
 	public static void main(String[] theArgs) {
 		FhirContext ctx = FhirContext.forR4();
-		IGenericClient client = ctx.newRestfulGenericClient("http://18.116.237.4:8080/fhir");
+		IGenericClient client = ctx.newRestfulGenericClient("http://localhost:8081/fhir");
 
 		// Build a search and execute it
 		Bundle response = client.search()
