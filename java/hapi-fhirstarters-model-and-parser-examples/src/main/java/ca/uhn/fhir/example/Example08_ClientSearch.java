@@ -14,7 +14,7 @@ public class Example08_ClientSearch {
 		// Build a search and execute it
 		Bundle response = client.search()
 				.forResource(Patient.class)
-				// .where(Patient.NAME.matches().value("Nairobi"))
+				.where(Patient.NAME.matches().value("Ntota"))
 				// .and(Patient.BIRTHDATE.before().day("2014-01-01"))
 				// .count(100)
 				.returnBundle(Bundle.class)
