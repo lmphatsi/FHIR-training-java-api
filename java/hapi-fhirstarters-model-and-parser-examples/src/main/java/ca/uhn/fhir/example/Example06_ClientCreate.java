@@ -19,7 +19,7 @@ public class Example06_ClientCreate {
 		// Patient resource
 		Patient pat = new Patient();
 		pat.setId("B-10");
-		pat.addName().setFamily("Ntota").addGiven("Matsie2").addGiven("J");
+		pat.addName().setFamily("Ntota").addGiven("Matsie-Thabo").addGiven("J");
 		pat.addIdentifier().setSystem("http://Home affairs Lesotho").setValue("7000135BBB");
 		pat.setGender(AdministrativeGender.MALE);
 
@@ -41,7 +41,7 @@ public class Example06_ClientCreate {
 		FhirContext ctx = FhirContext.forR4();
 
 		// Create a client
-		String serverBaseUrl = "http://18.116.237.4:8080/fhir";
+		String serverBaseUrl = "http://localhost:8081/fhir";
 		IGenericClient client = ctx.newRestfulGenericClient(serverBaseUrl);
 
 		// Use the client to store a new resource instance
